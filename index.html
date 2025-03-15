@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: skyblue;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      background-color: pink;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    hr {
+      border: 3px solid purple;
+      width: 80%;
+    }
+
+    th {
+      background-color: darkblue;
+      color: white;
+      padding: 8px;
+    }
+
+    a {
+      display: inline-block;
+      background-color: pink;
+      color: darkblue;
+      padding: 8px 12px;
+      text-decoration: none;
+    }
+
+    img {
+      margin: 10px;
+      width: 260px;
+      height: 260px;
+    }
+
+    button {
+      background-color: pink;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      font-size: 16px;
+    }
+
+    video {
+      width: 500px;
+      height: 400px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 18px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My E-Portfolio</h1>
+<h3 align="center">Pia Paula Cabrera<br>9-Family<br>Ms. Uminga</hr>
+  <br><br>
+
+  <div>
+    <button onclick="greet()">Enter Your Name</button>
+    <p id="tulips"></p>
+
+    <button onclick="checkNumber()">How much do you love ICT?</button>
+    <p id="rose"></p>
+  </div>
+
+  <script>
+    function greet() {
+      let name = prompt("What's your name?");
+      if (name) {
+        document.getElementById("tulips").textContent = "Hello, " + name + "!";
+      }
+    }
+
+    function checkNumber() {
+      let number = (prompt("Rate your love/like for ICT (1-10):"));
+      if (!isNaN(number) && number >= 1 && number <= 10) {
+        let message = (number > 5) ? "Oooh, so you love ICT!sheeshhh" : "Oh no, you don't like/love ICT?haysss";
+        document.getElementById("rose").textContent = message;
+      } else {
+        alert("Please enter a number between 1 and 10!");
+      }
+    }
+  </script>
+
+  <hr>
+  <h1>My Past E-Portfolios</h1>
+  <hr>
+
+  <table align="center" border="1" width="600" cellpadding="10">
+    <th>Links</th>
+    <th>Links</th>
+    <tr>
+      <td><a href="https://66fa87f1eff6330a0084af3e--adorable-sawine-a469e1.netlify.app/">QUARTER 1</a></td>
+      <td><a href="https://paulyn4342.github.io/2ndQuarterPortfolio.github.io/">QUARTER 2</a></td>
+    </tr>
+  </table>
+
+  <hr>
+  <h1>Photos!</h1>
+  <hr>
+
+  <div>
+    <img src="PIC1.jpg.jpg" alt="Pic1">
+    <img src="PIC2.jpg (2).jpg" alt="Pic2">
+    <img src="PIC3.jpg (2).jpg" alt="Pic3">
+    <img src="PIC4.jpg.jpg" alt="Pic4">
+    <img src="PIC5.jpg.jpg" alt="Pic5">
+  </div>
+
+  <hr>
+  <h1>Videos!</h1>
+  <hr>
+
+  <div>
+    <video controls src="VID1.mp4.mp4"></video>
+    <video controls src="VID2.mp4.mp4"></video>
+  </div>
+
+  <br><br>
+
+  <button onclick="alert('HOWDY!')">CLICK ME!!!</button>
+
+  <br><br>
+
+  <ul>
+  </ul>
+  <script>
+    document.write("<ul>"); 
+    for (let i = 1; i <= 6; i++) {
+      if (i === 6) {
+        document.write("<li id='sunflower'>✪ω✪ WOW^^</li>");
+      } else {
+        document.write("<li>" + i + "</li>");
+      }
+    }
+    document.write("</ul>"); 
+  </script>
+
+
+<a align="center" href="https://docs.google.com/document/d/14VSMTTTsawR3c6eTfVnVG4vtpJg_jAiXAXt3pLfazbU/edit?usp=sharing" alt="sample">SAMPLE CODES & REFLECTION</a>
+
+<br>
+
+  <br>
+  <audio controls autoplay loop src="SBM.mp3.mp3"></audio>
+
+</body>
+</html>
